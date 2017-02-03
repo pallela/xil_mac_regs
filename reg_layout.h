@@ -525,8 +525,8 @@ struct reg_layout mac_regs[TOTAL_REGISTERS] = {
             "unused1", 31, 9, TYPE_UNUSED }}, 
 
     { "stat_rx_flow_control_reg1", 0x0454, 3, 
-        { "stat_rx_pause_req", 8, 0, TYPE_RO | TYPE_LL, 
-            "stat_rx_pause_valid", 17, 9, TYPE_RO | TYPE_LL, 
+        { "stat_rx_pause_req", 8, 0, TYPE_RO | TYPE_LH, 
+            "stat_rx_pause_valid", 17, 9, TYPE_RO | TYPE_LH, 
             "unused1", 31, 18, TYPE_UNUSED }}, 
 
     { "stat_an_status", 0x0458, 18, 

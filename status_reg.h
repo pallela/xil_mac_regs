@@ -305,9 +305,9 @@ struct stat_lt_status_reg2
 struct stat_lt_status_reg3 
 {
 
-	/* 03:00  0  RO */ volatile unsigned int stat_lt_signal_detect;
+	/* 03:00  0  RO */ volatile unsigned int stat_lt_signal_detect:4;
 	/* 15:04        */ volatile unsigned int unused1:12;
-	/* 19:16  0  RO */ volatile unsigned int stat_lt_training_fail;
+	/* 19:16  0  RO */ volatile unsigned int stat_lt_training_fail:4;
 	/* 31:20        */ volatile unsigned int unused2:12;
 
 }ATTRIBUTES_STATUS_REGS;

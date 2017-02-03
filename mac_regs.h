@@ -450,7 +450,7 @@ struct mac_registers {
 
     } user_reg_1;
 
-    volatile uint32_t unused10[158];
+    volatile uint32_t unused10[157];
 
     union stat_tx_status_reg1_32bit {  /* 0x0400 */
 
